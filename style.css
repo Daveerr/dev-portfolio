@@ -248,8 +248,8 @@ button {
 }
 
 #profile-pic {
-  width: 200px;
-  height: auto;
+  width: 100px;
+  height: 100px;
 }
 
 @media (max-width: 768px) {
