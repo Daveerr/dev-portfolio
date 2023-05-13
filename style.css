@@ -13,12 +13,6 @@ body {
   margin: auto;
 }
 
-.head {
-  width: 1200px;
-
-  margin: 0 auto;
-}
-
 .main-header {
   background-color: black;
 
@@ -58,7 +52,8 @@ p {
   font-size: 22px;
   line-height: 1.5;
   margin-bottom: 15px;
-  background-color: white;
+  background-color: black;
+  color: steelblue;
 }
 
 ul,
@@ -102,9 +97,9 @@ a:visited {
 }
 
 a:hover {
-  color: orangered;
+  color: lightblue;
   font-weight: bold;
-  text-decoration: underline orangered;
+  text-decoration: underline white;
 }
 
 a:active {
@@ -183,11 +178,6 @@ button {
   margin-right: 100px;
 }
 
-.main-header {
-  /* grid-column: 1 / span 2; */
-  grid-column: 1 / -1;
-}
-
 #boutMe-txt p {
   background-color: black;
   color: white;
@@ -203,7 +193,7 @@ button {
   text-align: center;
   padding-bottom: 15px;
   font-size: 45px;
-  color: white;
+  color: steelblue;
   background-color: black;
 }
 
@@ -257,8 +247,24 @@ button {
   transform: scale(1);
 }
 
+#profile-pic {
+  width: 200px;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .main-header .nav .head {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .head .main-header .nav .container {
+    font-size: 14px;
   }
 }
